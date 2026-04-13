@@ -25,8 +25,8 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
-        // Activity type number (0 = Playing).
+        name: "discord.gg/ariesro",
+        // Activity type number (3 = Playing).
         type: 0, 
       },
     ],
@@ -38,7 +38,7 @@ export const botConfig = {
   commands: {
     // Bot owner user IDs (comma-separated in OWNER_IDS env var).
     // Owners can access owner/admin-level bot commands.
-    owners: process.env.OWNER_IDS?.split(",") || [],
+    owners: process.env.OWNER_IDS?.split("1299778019988209676,") || [],
 
     // Default wait time between command uses (in seconds).
     defaultCooldown: 3, 
@@ -201,15 +201,15 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: 1480871835536199710,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [1480869361706205216],
 
     // Priority options users/staff can assign.
     priorities: {
       none: {
-        emoji: "⚪",
+        emoji: "🎫〢",
         color: "#95A5A6",
         label: "None",
       },
@@ -242,7 +242,7 @@ export const botConfig = {
     archiveCategory: null,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1418625371733098618,
   },
 
   // =========================
@@ -264,10 +264,10 @@ export const botConfig = {
     maximumDuration: 2592000000, 
 
     // Role IDs allowed to host giveaways.
-    allowedRoles: [],
+    allowedRoles: [1299778019988209676],
 
     // Role IDs that bypass giveaway restrictions.
-    bypassRoles: [],
+    bypassRoles: [1299778019988209676],
   },
 
   // =========================
@@ -358,14 +358,14 @@ export const botConfig = {
   welcome: {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
-    defaultWelcomeMessage:
+    defaultWelcomeMessage:Bine ai venit {user} pe {server} , acum suntem {memberCount} !
       "Welcome {user} to {server}! We now have {memberCount} members!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
       "{user} has left the server. We now have {memberCount} members.",
-    // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
+    // Channel ID for welcome messages. 
+    defaultWelcomeChannel: 1480870552473178164,
     // Channel ID for goodbye messages.
     defaultGoodbyeChannel: null,
   },
@@ -421,13 +421,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "Nu ai acces la aceasta comanda.",
+    cooldownActive: "Asteapta.",
+    errorOccurred: "Error.",
     missingPermissions:
-      "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+      "Nu am permisiune.",
+    commandDisabled: "Aceasta comanda a fost scoasa.",
+    maintenanceMode: "BOT IN MENTENANTA.",
   },
 
   // =========================
@@ -436,30 +436,30 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
-    leveling: true,
-    moderation: true,
+    economy: false,
+    leveling: false,
+    moderation: false,
     logging: true,
     welcome: true,
 
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
-    counter: true,
+    birthday: false,
+    counter: false,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
-    joinToCreate: true,
+    verification: false,
+    reactionRoles: false,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
-    voice: true,
-    search: true,
-    tools: true,
-    utility: true,
-    community: true,
-    fun: true,
+    voice: false,
+    search: false,
+    tools: false,
+    utility: false,
+    community: false,
+    fun: false,
   },
 };
 
